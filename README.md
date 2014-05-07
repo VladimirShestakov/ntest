@@ -4,7 +4,7 @@
 
 ## Демо
 
-http://ntest.boolive.ru/
+http://demo5.boolive.ru
 
 ## Установка
 
