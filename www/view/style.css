@@ -1,0 +1,92 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    background: #f9f9f9;
+    font: normal 12pt Arial,sans-serif;
+    }
+img{
+    outline: 0;
+    border: 0;
+    }
+/* Основная разметка */
+.layout{
+    margin: auto;
+    padding: 5px;
+    min-width: 800px;
+    max-width: 1124px;
+    }
+    .layout__sidebar{
+        float: left;
+        width: 200px;
+        }
+    .layout__main{
+        margin: 0 0 0 200px;
+        }
+/* Блок сортировки*/
+.sort{
+    display: block;
+    width: 400px;
+    }
+    .sort__item{
+        display: inline-block;
+        padding: 1px 5px;
+        color: #00f;
+        }
+    .sort__item_active{
+        background: #00f;
+        color: #fff;
+        text-decoration: none;
+        }
+/* Блок фильтра потегам*/
+.filter{
+    margin: 0 5px 0 0;
+    padding: 5px;
+    background: #e6e6e6;
+    }
+/* Фотография */
+.photo{
+    display: inline-block;
+    margin: 5px 3px;
+    min-width: 200px;
+    background: #eee;
+    }
+    .photo__like-link{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+    .photo__like-link:hover{
+        color: #f00;
+        }
+/* Постраничная навигация */
+.pagenav{
+    margin: 5px 0;
+    }
+    .pagenav__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+    .pagenav__item{
+        display: inline-block;
+        padding: 1px 5px;
+        }
+    .pagenav__item_active{
+        background: #00f;
+        }
+    .pagenav__item_active a{
+        color: #fff;
+        text-decoration: none;
+        }
+
+/* Clearfix */
+.cf:before,
+.cf:after{
+    display: table;
+    content: " ";
+    }
+.cf:after{
+    clear: both;
+    }
+.cf{
+    *zoom: 1;
+    }
