@@ -1,5 +1,6 @@
 /**
  * Like
+ * @author Vladimir Shestakov
  */
 (function ($) {
     $(document).ready(function () {
@@ -8,8 +9,8 @@
             e.preventDefault();
             $.ajax({
                 type: "POST",
-                url: "like.php",
                 data: {
+                    call: 'like',
                     photo_id: $(this).attr('data-id')
                 },
                 success: function (result) {
